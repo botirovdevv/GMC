@@ -42,7 +42,6 @@ button {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 body {
@@ -296,6 +295,7 @@ input::-webkit-inner-spin-button {
 
 .rates {
   padding-top: 120px;
+  padding: 120px 30px 0 30px;
 }
 .rates-title {
   font-family: "Inter", sans-serif;
