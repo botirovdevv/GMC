@@ -21,7 +21,7 @@ const Navbar = () => {
                         {
                             linksData.map((item, key) => (
                                 <li className="nav-item">
-                                    <Link to={item.to} className='nav-link'>{item.title}</Link>
+                                    <Link onClick={() => setIsOpen(false)} to={item.to} className='nav-link'>{item.title}</Link>
                                 </li>
                             ))
                         }

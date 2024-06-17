@@ -114,10 +114,9 @@ input::-webkit-inner-spin-button {
     flex-direction: column;
     height: 100vh;
     background-color: #000;
-    padding: unset;
     margin: 0;
     padding-left: 50px;
-    padding-top: 50px;
+    padding-top: 100px;
     transform: translateX(-100%);
     gap: 30px;
     transition: all 0.2s ease-in-out;
@@ -167,7 +166,7 @@ input::-webkit-inner-spin-button {
 .nav-close_btn {
   display: none;
   border: none;
-  font-size: 23px;
+  font-size: 34px;
   color: #fff;
 }
 @media screen and (max-width: 563px) {
