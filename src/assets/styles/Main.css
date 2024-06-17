@@ -39,7 +39,7 @@ button {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px;
@@ -85,6 +85,12 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: center;
   z-index: 999;
+}
+.nav-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 .nav-content {
   display: flex;
@@ -225,7 +231,7 @@ input::-webkit-inner-spin-button {
 }
 @media screen and (max-width: 700px) {
   .header-title {
-    width: 100%;
+    width: 300px;
   }
 }
 .header-btn {
@@ -283,6 +289,9 @@ input::-webkit-inner-spin-button {
   align-items: center;
   justify-content: unset;
   gap: 10px;
+}
+.header-text {
+  padding-left: 20px;
 }
 
 .rates {

@@ -8,7 +8,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <nav className="nav">
-            <div className="container">
+            <div className="nav-container">
                 <div className="nav-content">
                     <Link to="/" className="nav-logo">
                         <h1 className="nav-logo_title">GMC</h1>

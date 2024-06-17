@@ -9,6 +9,13 @@
     @include flex(center, center);
     z-index: 999;
 
+    &-container {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
     &-content{
         @include flex(center, space-between);
     }
@@ -90,6 +97,7 @@
         display: none;
         border: none;
         font-size: 34px;
+
         color: #fff;
 
         @media screen and (max-width: 563px){
