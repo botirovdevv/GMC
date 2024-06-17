@@ -1,0 +1,90 @@
+.header {
+    padding-top: 100px;
+
+    &-content {
+        @include flex(center, space-between)
+    }
+
+    &-img {
+        @include adaptive-value('width', 460, 400);
+        filter: grayscale(100%);
+        transition: all 0.2s ease-in-out;
+        transform: translateX(7px);
+
+        &:hover{
+            filter: grayscale(0)
+        }
+
+        @media screen and (max-width: 800px){
+            display: none;
+        }
+    }
+
+    &-title{
+        @include adaptive-value('font-size', 55, 30);
+        font-family: $third;
+        font-weight: 700;
+        width: 750px;
+        font-style: normal;
+
+        @media screen and (max-width: 800px){
+            width: 600px;
+        }
+
+        @media screen and (max-width: 700px){
+            width: 100%;
+        }
+
+    }
+
+    &-btn{
+        font-family: $third;
+        @include adaptive-value('font-size', 18, 16);
+        border: none;
+        background-color: $button-color;
+        text-align: center;
+        padding: 12px 0;
+        width: 200px;
+        color: #fff;
+        border-radius: 4px;
+        transition: all 0.1s ease-in-out;
+        @include flex(center, center);
+        gap: 8px;
+
+        &:hover{
+            background-color: $button-hover;
+        }
+    }
+
+    &-rate{
+        @include flex(center, unset);
+        gap: 10px;
+        padding-top: 20px;
+
+        @media screen and (max-width: 381px){
+            flex-direction: column;
+            align-items: start;
+        }
+
+        &_title{
+            font-family: $third;
+            font-size: 18px;
+        }
+    }
+
+    &-dollar{
+        font-family: $third;
+        font-size: 18px;
+    }
+
+    &-usa_img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    &-usa_rate{
+        @include flex(center, unset);
+        gap: 10px;
+    }
+}

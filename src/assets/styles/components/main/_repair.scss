@@ -1,0 +1,22 @@
+.repair{
+    
+    &-content{
+        @include flex(center, center);
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    &-title{
+        font-family: $third;
+        font-weight: 500;
+        @include adaptive-value('font-size', 30, 22);
+        text-align: center;
+    }
+
+    &-img{
+        @include adaptive-value('width', 450, 400);
+        height: 250px;
+        object-fit: cover;
+    }
+}

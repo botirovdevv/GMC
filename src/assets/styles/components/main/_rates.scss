@@ -1,0 +1,91 @@
+.rates{
+    padding-top: 120px;
+
+    &-title{
+        font-family: $second-family;
+        @include adaptive-value('font-size', 34, 28);
+        letter-spacing: 0.70px;
+        font-weight: 700;
+        width: 100%;
+        padding-bottom: 30px
+    }
+
+    &-rate{
+        @include flex(center, space-between);
+        border-bottom: 1px dashed #000;
+        cursor: pointer;
+        padding: 0 10px;
+        border-radius: 3px;
+        transition: all 0.1s ease-in-out;
+
+        @media screen and (max-width: 400px){
+            padding: 10px 10px;
+        }
+
+        &:hover{
+            background-color: #cacaca;
+        }
+    }
+
+    &-content{
+        line-height: 30px
+    }
+
+    &-items{
+        @include flex(center, unset);
+        gap: 20px;
+
+        @media screen and (max-width: 457px){
+            gap: 10px;
+        }
+        
+        @media screen and (max-width: 400px){
+            margin: 0;
+            flex-direction: column;
+            gap: 1px;
+            align-items: start;
+        }
+    }
+
+    &-region{
+        font-family: $third;
+        font-weight: 600;
+        font-size: 18px;
+
+        @media screen and (max-width: 457px){
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 400px){
+            margin: 0;
+        }
+    }
+
+    &-name{
+        font-family: $third;
+        font-weight: 500;
+        font-size: 17px;
+
+        @media screen and (max-width: 457px){
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 400px){
+            margin: 0;
+        }
+    }
+
+    &-price{
+        font-family: $third;
+        font-weight: 500;
+        font-size: 18px;
+
+        @media screen and (max-width: 457px){
+            font-size: 16px;
+        }
+
+        @media screen and (max-width: 400px){
+            margin: 0;
+        }
+    }
+}
